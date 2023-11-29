@@ -1,8 +1,10 @@
-import './index.scss';
+import './index.scss'
 import classNames from 'classnames'
 import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation'
+import CV from './files/AndrejLizák_CV_V2.pdf'
+import CV_photo from './img/creative_cv.jpg'
 
 
 
@@ -18,7 +20,7 @@ function Header(){
                     {headingParagraph}
                 </p>
                 <div className='buttons'>
-                    <a href='./img/AndrejLizák_CV_V2.pdf' download>
+                    <a href={CV} download>
                         <button className="btn download" >
                             
                             {t('btn_download')}
@@ -31,7 +33,7 @@ function Header(){
             </div>
 
             <div className="main-right">
-                <img src="./img/creative_cv.jpg" alt="photo here" />
+                <img src={CV_photo} alt="photo here" />
             </div>
             
             

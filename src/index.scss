@@ -32,7 +32,16 @@ header{
     justify-content: center;
     height: 100%;
     img{
-        size: 1%;
+        border: solid .1rem $hColor;
+        width:350px;
+        height: auto;
+        transition: all .5s ease;
+        &:hover{
+            width: 370px;
+            border: double;
+            height: auto;
+            transition: all .5s ease;
+        }
     }
 }
 
@@ -46,7 +55,7 @@ h1{
 }
 
 p{
-    width: 50%;
+    width: 75%;
     margin-top: 2em;
     font-family:'Courier New', Courier, monospace;
     font-size: 1.3rem;
