@@ -1,0 +1,133 @@
+@font-face {
+    font-family: headerFont;
+    src: url(fonts/LEMONMILK-Regular.ttf);
+}
+@font-face {
+    font-family: headerFont2;
+    src: url(fonts/CaviarDreams_Bold.ttf);
+}
+$hColor: #364453;
+
+// HEADER
+header{
+    height: 100dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+}
+
+.main-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.main-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    img{
+        size: 1%;
+    }
+}
+
+
+h1{
+    color: $hColor;
+    margin: 0;
+    font-family: headerFont;
+    font-size: 6em;
+    line-height: 7.5rem;
+}
+
+p{
+    width: 50%;
+    margin-top: 2em;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    
+
+    strong{
+        font-weight: 600;
+        color:$hColor;
+    }
+}
+.buttons{
+    margin-top: 2em;
+}
+.btn{
+    font-family: headerFont;
+    padding: 2em 2.5em;
+    border-style: none;
+    color: white;
+    border-radius: .25rem;
+    border-style: solid;
+    border-color: $hColor;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.download{
+    color: $hColor;
+    background-color: white;
+    transition: all .3s ease;
+    &:hover{
+        text-decoration: line-through;
+        background-color: $hColor;
+        color: white;
+        transition: all .3s ease;
+    }
+}
+
+.discover{
+    background-color: $hColor;
+    margin-left: 2em;
+    transition: all .3s ease;
+    &:hover{
+        text-decoration: line-through;
+        background-color: white;
+        color: $hColor;
+        transition: all .3s ease;
+    }
+}
+
+// SELECT LANGUAGE
+.select-lang{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 5% 15% 0 15%;
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 80%;
+        margin-top: 3em;
+        background-color: #f0f0f0;
+
+        .btn{
+            margin: 3em;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            span{
+                font-size: 10em;
+               
+            }
+            
+        }
+    
+    }
+    h1{
+        font-size: 4em;
+    }
+    
+}
