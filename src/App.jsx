@@ -9,6 +9,7 @@ import LangSel from './LangSel.jsx'
 
 
 function App() {
+  
   const { t } = useTranslation()
   const currentLanguageCode = cookies.get('i18next') || 'en'
   useEffect(() => {  

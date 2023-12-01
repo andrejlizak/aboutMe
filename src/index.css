@@ -1,0 +1,238 @@
+@font-face {
+  font-family: headerFont;
+  src: url(fonts/LEMONMILK-Regular.ttf);
+}
+@font-face {
+  font-family: headerFont2;
+  src: url(fonts/Exo-ExtraLight.ttf);
+}
+.fallback h2 {
+  font-family: headerFont;
+  text-align: center;
+  color: #364453;
+}
+
+header {
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+}
+
+.main-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.main-right img {
+  width: 335px;
+  height: auto;
+  box-shadow: #023e8a 2px 3px 10px;
+  transition: all 0.5s ease;
+}
+.main-right img:hover {
+  box-shadow: #023e8a 2px 3px 20px;
+  width: 345px;
+  height: auto;
+  cursor: pointer;
+  transition: width box-shadow 0.5s ease;
+}
+
+h1 {
+  color: #364453;
+  margin: 0;
+  font-family: headerFont;
+  font-size: 6em;
+  line-height: 7.5rem;
+}
+
+p {
+  width: 64%;
+  margin-top: 2em;
+  font-family: headerFont2;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+p strong {
+  font-weight: 600;
+  color: #364453;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.btn {
+  font-family: headerFont;
+  padding: 2em 2.5em;
+  border-style: none;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: #023e8a 2px 3px 10px;
+}
+
+.download {
+  color: #023e8a;
+  box-shadow: #023e8a 2px 3px 10px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.download:hover {
+  background-color: #023e8a;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.discover {
+  background-color: #023e8a;
+  margin-left: 2em;
+  transition: all 0.3s ease;
+}
+.discover:hover {
+  background-color: white;
+  color: #023e8a;
+  transition: all 0.3s ease;
+}
+
+.select-lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 15% 0 15%;
+}
+.select-lang div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 3em;
+  background-color: #f0f0f0;
+}
+.select-lang div .btn {
+  margin: 3em;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+.select-lang div .btn span {
+  font-size: 10em;
+}
+.select-lang h1 {
+  font-size: 4em;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#first-row {
+  justify-content: end;
+}
+
+.dialog-header {
+  background-color: #023e8a;
+  height: 70dvh;
+}
+
+#btn-close {
+  margin: 2em 2em 0 0;
+  border: none;
+  background-color: transparent;
+}
+#btn-close img {
+  width: 2em;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+#btn-close img:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: transform 0.3s ease;
+}
+
+.icon-list {
+  margin: 4em 10em 4em 10em;
+  height: 10vh;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.icon-list a img {
+  width: 4rem;
+  height: auto;
+  padding-top: 5px;
+}
+.icon-list a img:hover {
+  border-top: #023e8a 3px solid;
+  opacity: 85%;
+}
+
+.border {
+  margin: 0 1em 0 1em;
+  border-bottom: #023e8a 0.3em dotted;
+}
+
+.dialog-content-wrapper {
+  margin: 0 12% 0 12%;
+}
+
+#second-row {
+  height: 100%;
+  justify-content: space-around;
+}
+#second-row .flex-col {
+  align-items: start;
+  justify-content: center;
+  margin-top: 2em;
+}
+#second-row .flex-col h1 {
+  font-size: 3rem;
+  color: white;
+  line-height: 3rem;
+}
+#second-row .flex-col p {
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+#my-photo {
+  justify-content: center;
+  align-items: center;
+}
+#my-photo img {
+  width: 200px;
+  height: auto;
+}
+
+.dialog-element {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.dialog-element h1 {
+  font-size: 3rem;
+  line-height: 2em;
+}
+.dialog-element p {
+  margin: 0;
+  font-size: 1.15rem;
+}/*# sourceMappingURL=index.css.map */

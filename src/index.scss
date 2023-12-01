@@ -4,10 +4,20 @@
 }
 @font-face {
     font-family: headerFont2;
-    src: url(fonts/CaviarDreams_Bold.ttf);
+    src: url(fonts/Exo-ExtraLight.ttf);
 }
 $hColor: #364453;
+$secondary : #023e8a;
 
+
+//fallback 
+.fallback{
+    h2{
+        font-family: headerFont;
+        text-align: center;
+        color: $hColor;
+    }
+}
 // HEADER
 header{
     height: 100dvh;
@@ -32,15 +42,17 @@ header{
     justify-content: center;
     height: 100%;
     img{
-        border: solid .1rem $hColor;
-        width:350px;
+        width:335px;
         height: auto;
+        box-shadow: $secondary 2px 3px 10px;
         transition: all .5s ease;
+
         &:hover{
-            width: 370px;
-            border: double;
+            box-shadow: $secondary 2px 3px 20px;
+            width: 345px;
             height: auto;
-            transition: all .5s ease;
+            cursor: pointer;
+            transition: width box-shadow .5s ease;
         }
     }
 }
@@ -55,9 +67,9 @@ h1{
 }
 
 p{
-    width: 75%;
+    width: 64%;
     margin-top: 2em;
-    font-family:'Courier New', Courier, monospace;
+    font-family:headerFont2;
     font-size: 1.3rem;
     line-height: 2rem;
     
@@ -75,34 +87,32 @@ p{
     padding: 2em 2.5em;
     border-style: none;
     color: white;
-    border-radius: .25rem;
-    border-style: solid;
-    border-color: $hColor;
+
     &:hover{
         cursor: pointer;
+        box-shadow: $secondary 2px 3px 10px;
     }
 }
 
 .download{
-    color: $hColor;
+    color: $secondary;
+    box-shadow: $secondary 2px 3px 10px;
     background-color: white;
     transition: all .3s ease;
     &:hover{
-        text-decoration: line-through;
-        background-color: $hColor;
+        background-color: $secondary;
         color: white;
         transition: all .3s ease;
     }
 }
 
 .discover{
-    background-color: $hColor;
+    background-color: $secondary;
     margin-left: 2em;
     transition: all .3s ease;
     &:hover{
-        text-decoration: line-through;
         background-color: white;
-        color: $hColor;
+        color: $secondary;
         transition: all .3s ease;
     }
 }
@@ -140,3 +150,108 @@ p{
     }
     
 }
+
+// dialog-win
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+#first-row{
+    justify-content: end;
+}
+
+.dialog-header{
+    background-color: $secondary;
+    height: 70dvh;
+}
+#btn-close{
+    margin: 2em 2em 0 0;
+    border: none;
+    background-color: transparent;
+    img{
+        width: 2em;
+        height: auto;
+        transition: transform .3s ease;
+        &:hover{
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition: transform .3s ease;
+        }
+    }
+}
+
+.icon-list{
+    margin: 4em 10em 4em 10em;
+    height: 10vh;
+    list-style-type: none;
+    justify-content: space-around;
+
+    a{
+        img{
+            width: 4rem;
+            height: auto;
+            padding-top: 5px;
+            &:hover{
+                border-top: $secondary 3px solid;
+                opacity: 85%;
+            }
+        }
+    }
+}
+.border{
+    margin: 0 1em 0 1em;
+    border-bottom: $secondary .3em dotted;
+}
+
+.dialog-content-wrapper{
+    margin: 0 12% 0 12%;
+}
+
+#second-row{
+    height:100%;
+    justify-content: space-around;
+    .flex-col{
+        align-items: start;
+        justify-content: center;
+        margin-top: 2em;
+        h1{
+            font-size: 3rem;
+            color: white;
+            line-height: 3rem;
+        }
+        p{
+            width: 100%;
+            color:white;
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+}
+#my-photo{
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 200px;
+        height: auto;
+    }
+}
+
+.dialog-element{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    h1{
+        font-size: 3rem;
+        line-height: 2em;
+    }
+    p{
+        margin: 0;
+        font-size:1.15rem;
+    }
+}
+
