@@ -28,13 +28,13 @@ function LangSel(){
     
     return(
         <div className="select-lang">
-            <h1>Select Langugage</h1>
+            <h1 className='animate__animated animate__pulse'>Select Langugage</h1>
             <div>
                 {languages.map(({ code, country_code }) =>(
                     <Link to="/header" onClick={() => {
                         changeLanguage(code);
                         }}> 
-                        <button key={code} className="btn"><span className={`fi fi-${country_code}`}></span>
+                        <button key={code} className="btn animate__animated animate__pulse"><span className={`fi fi-${country_code}`}></span>
                         </button>
                     </Link>
                 ))}

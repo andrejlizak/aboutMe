@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: headerFont2;
-  src: url(fonts/Exo-ExtraLight.ttf);
+  src: url(fonts/Exo-VariableFont_wght.ttf);
 }
 .fallback h2 {
   font-family: headerFont;
@@ -43,8 +43,6 @@ header {
 }
 .main-right img:hover {
   box-shadow: #023e8a 2px 3px 20px;
-  width: 345px;
-  height: auto;
   cursor: pointer;
   transition: width box-shadow 0.5s ease;
 }
@@ -61,8 +59,10 @@ p {
   width: 64%;
   margin-top: 2em;
   font-family: headerFont2;
+  font-weight: 200;
   font-size: 1.3rem;
   line-height: 2rem;
+  text-align: justify;
 }
 p strong {
   font-weight: 600;
@@ -187,7 +187,7 @@ p strong {
 
 .border {
   margin: 0 1em 0 1em;
-  border-bottom: #023e8a 0.3em dotted;
+  border-bottom: #023e8a 0.2em dotted;
 }
 
 .dialog-content-wrapper {
@@ -224,15 +224,172 @@ p strong {
   height: auto;
 }
 
+#educationh1 {
+  color: #023e8a;
+  font-size: 2.5rem;
+  line-height: 3em;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .dialog-element {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 .dialog-element h1 {
-  font-size: 3rem;
-  line-height: 2em;
+  color: #023e8a;
+  font-size: 2.5rem;
+  line-height: 3em;
+  text-align: center;
+}
+.dialog-element h4 {
+  color: #364453;
+  font-family: headerFont2;
+  font-weight: 500;
+  margin: 1.5em 0 0 0;
+}
+.dialog-element h4:first-of-type {
+  margin: 0;
 }
 .dialog-element p {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-weight: 250;
+  line-height: 1.55rem;
+  text-align: justify;
+}
+.dialog-element img {
+  width: 100%;
+  height: auto;
+  margin-top: 9em;
+}
+.dialog-element img:first-child {
+  width: 70%;
+  margin-top: 5em;
+}
+
+.img-wrapper {
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#about .flex-col {
+  padding-bottom: 1em;
+}
+
+#about2 {
+  padding-top: 0;
+  align-items: end;
+}
+
+#about3 {
+  padding-top: 0;
+  align-items: end;
+}
+
+#about4 {
+  padding-top: 0;
+}
+
+#edu .flex-row .flex-col p {
+  margin: 1em 0 0 0;
+}
+#edu .flex-row .flex-col p i {
+  font-weight: 100;
+}
+
+.bar {
+  height: 20px;
+  background-color: #023e8a;
+}
+
+.shadow-bar {
+  height: 20px;
+  background-color: #d1d1d1;
+}
+
+.bar-wrapper {
+  margin-bottom: 1.5em;
+}
+
+#HTML {
+  width: 80%;
+}
+
+.HTML {
+  width: 20%;
+}
+
+#php {
+  width: 60%;
+}
+
+.php {
+  width: 40%;
+}
+
+#sql {
+  width: 30%;
+}
+
+.sql {
+  width: 70%;
+}
+
+#c {
+  width: 80%;
+}
+
+.c {
+  width: 20%;
+}
+
+#cSharp {
+  width: 30%;
+}
+
+.cSharp {
+  width: 70%;
+}
+
+#java {
+  width: 40%;
+}
+
+.java {
+  width: 60%;
+}
+
+#react {
+  width: 40%;
+}
+
+.react {
+  width: 60%;
+}
+
+#javascript {
+  width: 50%;
+}
+
+.javascript {
+  width: 50%;
+}
+
+#ps {
+  width: 30%;
+}
+
+.ps {
+  width: 70%;
+}
+
+#git {
+  width: 50%;
+}
+
+.git {
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */
