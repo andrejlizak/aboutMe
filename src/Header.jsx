@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { TypeAnimation } from 'react-type-animation'
 import CV from './files/AndrejLizák_CV_V2.pdf'
 import CV_photo from './img/creative_cv.jpg'
+import CV_SK from './files/creative_cv_SK.pdf'
 import CvModal from './CvModal'
 import Modal from 'react-modal'
 import 'animate.css'
@@ -20,6 +21,7 @@ function Header(){
     const { t } = useTranslation();
   
     const headingParagraph = t('heading_paragraph');
+    const pdf = i18next.language === 'sk' ? CV_SK : CV;
     return (
         <header>
             <div className="main-left">
@@ -28,7 +30,7 @@ function Header(){
                     {headingParagraph}
                 </p>
                 <div className='buttons animate__animated animate__fadeInUp'>
-                    <a href={CV} download>
+                    <a href={pdf} download>
                         <button className="btn download" >
                             
                             {t('btn_download')}
