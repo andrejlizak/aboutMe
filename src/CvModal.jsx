@@ -131,34 +131,29 @@ const CvModal = ({ open, handleClose }) =>{
                                 <div className="shadow-bar HTML" ></div>
                             </div>
 
-                            <p><i>PHP</i></p>
-                            <div className="flex-row bar-wrapper">
-                                <div className="bar" id='php'></div>
-                                <div className="shadow-bar php" ></div>
-                            </div>
-
-                            <p><i>SQL</i></p>
-                            <div className="flex-row bar-wrapper">
-                                <div className="bar" id='sql'></div>
-                                <div className="shadow-bar sql" ></div>
-                            </div>
-
                             <p><i>C</i></p>
                             <div className="flex-row bar-wrapper">
                                 <div className="bar" id='c'></div>
                                 <div className="shadow-bar c" ></div>
                             </div>
 
-                            <p><i>C#</i></p>
+                            <p><i>PHP</i></p>
                             <div className="flex-row bar-wrapper">
-                                <div className="bar" id='cSharp'></div>
-                                <div className="shadow-bar cSharp" ></div>
+                                <div className="bar" id='php'></div>
+                                <div className="shadow-bar php" ></div>
                             </div>
 
-                            <p><i>JAVA</i></p>
+                            <p><i>GIT</i></p>
                             <div className="flex-row bar-wrapper">
-                                <div className="bar" id='java'></div>
-                                <div className="shadow-bar java" ></div>
+                                <div className="bar" id='git'></div>
+                                <div className="shadow-bar git" ></div>
+                            </div>
+
+
+                            <p><i>JAVASCRIPT</i></p>
+                            <div className="flex-row bar-wrapper">
+                                <div className="bar" id='javascript'></div>
+                                <div className="shadow-bar javascript"></div>
                             </div>
 
                             <p><i>REACT</i></p>
@@ -167,11 +162,25 @@ const CvModal = ({ open, handleClose }) =>{
                                 <div className="shadow-bar react" ></div>
                             </div>
 
-                            <p><i>JAVASCRIPT</i></p>
+                            <p><i>JAVA</i></p>
                             <div className="flex-row bar-wrapper">
-                                <div className="bar" id='javascript'></div>
-                                <div className="shadow-bar javascript"></div>
+                                <div className="bar" id='java'></div>
+                                <div className="shadow-bar java" ></div>
                             </div>
+
+                            <p><i>SQL</i></p>
+                            <div className="flex-row bar-wrapper">
+                                <div className="bar" id='sql'></div>
+                                <div className="shadow-bar sql" ></div>
+                            </div>
+
+
+                            <p><i>C#</i></p>
+                            <div className="flex-row bar-wrapper">
+                                <div className="bar" id='cSharp'></div>
+                                <div className="shadow-bar cSharp" ></div>
+                            </div>
+
 
                             <p><i>PHOTOSHOP</i></p>
                             <div className="flex-row bar-wrapper">
@@ -179,11 +188,6 @@ const CvModal = ({ open, handleClose }) =>{
                                 <div className="shadow-bar ps"></div>
                             </div>
 
-                            <p><i>GIT</i></p>
-                            <div className="flex-row bar-wrapper">
-                                <div className="bar" id='git'></div>
-                                <div className="shadow-bar git" ></div>
-                            </div>
                             
                         </div>
                     </div>
