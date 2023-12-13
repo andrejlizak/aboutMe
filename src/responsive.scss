@@ -81,6 +81,32 @@
 
 }
 
+@media (max-width: 630px) {
+    .main-left{
+        h1{
+            font-size: 5em;
+            line-height: 1.2em;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 516px) {
+    .dialog-element{
+        h1{
+            line-height: 3.5rem;
+            margin-bottom: 1em;
+        }
+    }
+
+}
+
+
 @media (max-width: 400px) {
     .select-lang{
         div{
