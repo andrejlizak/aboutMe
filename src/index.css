@@ -134,6 +134,18 @@ p strong {
   font-size: 4em;
 }
 
+.modal {
+  position: absolute;
+  inset: 30px 200px -2px;
+  border: none;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: rgb(2, 62, 138) -3px -3px 30px;
+  outline: none;
+  padding: 0px;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;

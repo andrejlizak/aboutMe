@@ -47,21 +47,6 @@ const CvModal = ({ open, handleClose }) =>{
                       backgroundColor: 'rgba(255, 255, 255, 0.75)'
                     
 
-                    },
-                    content: {
-                      position: 'absolute',
-                      top: '30px',
-                      left: '200px',
-                      right: '200px',
-                      bottom: '-2px',
-                      border: 'none',
-                      background: '#fff',
-                      overflow: 'auto',
-                      WebkitOverflowScrolling: 'touch',
-                      borderRadius: '5px',
-                      boxShadow: '-3px -3px 30px #023e8a',
-                      outline: 'none',
-                      padding: '0px'
                     }
                   }}
             
