@@ -16,6 +16,12 @@ import logo2 from './img/TUKE_logo_website.png'
 
 
 
+const images = [
+    { src: '/src/img/Gallery1.jpg', alt: 'https://github.com/andrejlizak/anlee' },
+    { src: '/src/img/Gallery3.jpg', alt: 'https://github.com/andrejlizak/game-in-c' },
+    { src: '/src/img/Gallery4.jpg', alt: 'https://github.com/TELIT-Hackathon2023/6-draci' },
+    { src: '/src/img/Gallery2.jpg', alt: 'https://github.com/andrejlizak/takeshi-trezor' }
+  ];
 
 const CvModal = ({ open, handleClose }) =>{
     const { t } = useTranslation();
@@ -199,6 +205,20 @@ const CvModal = ({ open, handleClose }) =>{
                 <div className="dialog-content-wrapper" id='port'>
                     <div className="flex-col dialog-element" >
                         <h1>{t('portfolio_h')}</h1>
+                        <div className="gallery">
+                            
+                            {images.map((image, index) => (
+                                <a href={image.alt} target='_blank'>
+                                <img
+                                key={index}
+                                className={`gallery_item ${index === 3 ? "second_column" : "first_colum"}`}
+                                src={image.src}
+                                alt={image.alt}
+                                style={{ width: "300px", height: "auto" }}
+                                />
+                                </a>
+                            ))}
+                        </div>
                     </div>
             
                 </div>
@@ -208,15 +228,36 @@ const CvModal = ({ open, handleClose }) =>{
                 <div className="dialog-content-wrapper" id='reach'>
                     <div className="flex-col dialog-element" >
                         <h1>{t('reach_h')}</h1>
-                        <p>{t('reach')}</p>
+                        <div className="flex-col reach-me">
+                            <div className="flex-row">
+                                <img src="/src/img/telephone.png" alt="" />
+                                <h3>+421911252664</h3>
+                            </div>
+                        </div>
+                        <div className="flex-col reach-me">
+                            <div className="flex-row">
+                                <img src="/src/img/mail.png" alt="" />
+                                <h3>andrejlizak1@gmail.com</h3>
+                            </div>
+                        </div>
+                        <div className="flex-col reach-me">
+                            <div className="flex-row">
+                                <img src="/src/img/linkedin.png" alt="" />
+                                <a href="https://www.linkedin.com/in/andrej-liz%C3%A1k-3954ab149/" target='_blank'><h3>Andrej Lizák</h3></a>
+                            </div>
+                        </div>
+                        <div className="flex-col reach-me">
+                            <div className="flex-row">
+                                <img src="/src/img/home-button.png" alt="" />
+                                <h3>Slnečná 28, Lendak, SK</h3>
+                            </div>
+                        </div>
                     </div>
             
                 </div>
             </div>
 
         
-            
-            
         
             
            
