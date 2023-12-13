@@ -13,14 +13,23 @@ import CV_photo from './img/creative_cv.jpg'
 import portfolio from './img/portfolio.png';
 import logo1 from './img/ifx8950fb7e45a5d6a8_logoTAv9_2010_bez_textu.jpg'
 import logo2 from './img/TUKE_logo_website.png'
+import phone from './img/telephone.png'
+import mail from './img/mail.png'
+import linkedin from './img/linkedin.png'
+import home from './img/home-button.png'
+import gallery1 from './img/Gallery1.jpg'
+import gallery2 from './img/Gallery2.jpg'
+import gallery3 from './img/Gallery3.jpg'
+import gallery4 from './img/Gallery4.jpg'
+
 
 
 
 const images = [
-    { src: '/src/img/Gallery1.jpg', alt: 'https://github.com/andrejlizak/anlee' },
-    { src: '/src/img/Gallery3.jpg', alt: 'https://github.com/andrejlizak/game-in-c' },
-    { src: '/src/img/Gallery4.jpg', alt: 'https://github.com/TELIT-Hackathon2023/6-draci' },
-    { src: '/src/img/Gallery2.jpg', alt: 'https://github.com/andrejlizak/takeshi-trezor' }
+    { src: gallery1, alt: 'https://github.com/andrejlizak/anlee' },
+    { src: gallery3, alt: 'https://github.com/andrejlizak/game-in-c' },
+    { src: gallery4, alt: 'https://github.com/TELIT-Hackathon2023/6-draci' },
+    { src: gallery2, alt: 'https://github.com/andrejlizak/takeshi-trezor' }
   ];
 
 const CvModal = ({ open, handleClose }) =>{
@@ -230,25 +239,25 @@ const CvModal = ({ open, handleClose }) =>{
                         <h1>{t('reach_h')}</h1>
                         <div className="flex-col reach-me">
                             <div className="flex-row">
-                                <img src="/src/img/telephone.png" alt="" />
+                                <img src={phone} alt="" />
                                 <h3>+421911252664</h3>
                             </div>
                         </div>
                         <div className="flex-col reach-me">
                             <div className="flex-row">
-                                <img src="/src/img/mail.png" alt="" />
+                                <img src={mail} alt="" />
                                 <h3>andrejlizak1@gmail.com</h3>
                             </div>
                         </div>
                         <div className="flex-col reach-me">
                             <div className="flex-row">
-                                <img src="/src/img/linkedin.png" alt="" />
+                                <img src={linkedin} alt="" />
                                 <a href="https://www.linkedin.com/in/andrej-liz%C3%A1k-3954ab149/" target='_blank'><h3>Andrej Lizák</h3></a>
                             </div>
                         </div>
                         <div className="flex-col reach-me">
                             <div className="flex-row">
-                                <img src="/src/img/home-button.png" alt="" />
+                                <img src={home} alt="" />
                                 <h3>Slnečná 28, Lendak, SK</h3>
                             </div>
                         </div>
