@@ -46,6 +46,9 @@
     align-items: center;
     justify-content: center;
   }
+  #second-row .flex-col:first-child {
+    margin-top: 0;
+  }
   .icon-list a img {
     width: 3rem;
   }
@@ -108,6 +111,9 @@
     padding: 1.5em 2em;
     margin: 0;
     width: 100%;
+  }
+  .buttons .download {
+    margin-bottom: 1em;
   }
   #second-row .flex-col h1 {
     font-size: 2.3rem;

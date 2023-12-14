@@ -56,6 +56,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .flex-col{
+            &:first-child{
+                margin-top: 0;
+            }
+        }
     }
     .icon-list{
         a{
@@ -152,6 +157,9 @@
             padding: 1.5em 2em;
             margin: 0;
             width: 100%;
+        }
+        .download{
+            margin-bottom: 1em;
         }
     }
 
