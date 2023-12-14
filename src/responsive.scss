@@ -46,8 +46,16 @@
 }
 
 @media (max-width: 700px) {
-    #my-photo{
-        display: none;
+    #my-photo img{
+        width: 150px;
+    }
+    .dialog-header{
+        height: 80dvh;
+    }
+    #second-row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .icon-list{
         a{
@@ -93,15 +101,28 @@
             width: 100%;
         }
     }
+    .icon-list {
+        margin: 3em 2em 3em 2em;
+        height: 10vh;
+        list-style-type: none;
+        justify-content: space-around;
+    }
 
 }
 
 @media (max-width: 516px) {
     .dialog-element{
         h1{
+            font-size: 2.3rem;
             line-height: 3.5rem;
             margin-bottom: 1em;
         }
+        p{
+            width: 100%;
+        }
+    }
+    .gallery_item:hover {
+        transform: scale(1.15);
     }
 
 }
@@ -110,7 +131,35 @@
 @media (max-width: 400px) {
     .select-lang{
         div{
-            background-color: white;
+            .btn{
+                span{
+                    font-size: 8em;
+                }
+            }
         }
     }
-   }
+    .main-left{
+        height: 100dvh;
+        h1{
+            font-size: 4em;
+        }
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    
+        .btn{
+            padding: 1.5em 2em;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    #second-row .flex-col h1 {
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+
+
+    
+}

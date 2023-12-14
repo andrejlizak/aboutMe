@@ -56,14 +56,15 @@ const CvModal = ({ open, handleClose }) =>{
                     <button id='btn-close' onClick={handleClose}><img src={krizik}/></button>
                 </div>
                 <div className="flex-row" id='second-row'>
+                <div className="flex-col" id='my-photo'>
+                        <img src={CV_photo} alt="photo here" />
+                    </div>
                     <div className="flex-col">
                         <p>{t('heading_paragraph_name')}</p>
                         <h1>Andrej Lizák</h1>
                         <p>{t('heading_paragraph_short')}</p>
                     </div>
-                    <div className="flex-col" id='my-photo'>
-                        <img src={CV_photo} alt="photo here" />
-                    </div>
+                
                 </div>
             </div>
             
@@ -102,7 +103,7 @@ const CvModal = ({ open, handleClose }) =>{
                     <div className="flex-col">
                         <h1 id='educationh1'>{t('education_h')}</h1>
                         <div className="flex-row">
-                            <div className="flex-col dialog-element" >
+                            <div className="flex-col dialog-element" id='edu-element'>
                                 <h4>Súkromná stredná odborná škola Ul.29.augusta 4812 Poprad</h4>
                                 <p><i>2018 - 2022</i></p>
                                 <p>{t('education')}</p>

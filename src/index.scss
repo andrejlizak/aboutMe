@@ -223,8 +223,11 @@ p{
 
 .dialog-content-wrapper{
     margin: 0 12% 0 12%;
+    padding-bottom: 1em;
 }
-
+#edu-element{
+    padding-top: 0;
+}
 #second-row{
     height:100%;
     justify-content: space-around;
@@ -259,7 +262,7 @@ p{
     font-size: 2.5rem;
     line-height: 3em;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 0rem;
 }
 .dialog-element{
     padding-top: 2em;
