@@ -108,7 +108,7 @@ const CvModal = ({ open, handleClose }) =>{
                                 <p>{t('education')}</p>
 
                                 <h4>{t('education_h2')}</h4>
-                                <p><i>2018 - 2022</i></p>
+                                <p><i>{t('education_u')}</i></p>
                                 <p>{t('education2')}</p>
                             </div>
                             <div className="flex-col dialog-element img-wrapper">
