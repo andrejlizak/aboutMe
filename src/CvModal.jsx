@@ -26,10 +26,10 @@ import gallery4 from './img/Gallery4.jpg'
 
 
 const images = [
-    { src: gallery1, alt: 'https://github.com/andrejlizak/anlee' },
-    { src: gallery3, alt: 'https://github.com/andrejlizak/game-in-c' },
+    { src: gallery1, alt: 'http://anlee.whf.bz' },
+    { src: gallery3, alt: 'https://github.com/andrejlizak' },
     { src: gallery4, alt: 'https://github.com/TELIT-Hackathon2023/6-draci' },
-    { src: gallery2, alt: 'https://github.com/andrejlizak/takeshi-trezor' }
+    { src: gallery2, alt: 'https://github.com/andrejlizak' }
   ];
 
 const CvModal = ({ open, handleClose }) =>{
@@ -203,7 +203,7 @@ const CvModal = ({ open, handleClose }) =>{
                         <div className="gallery">
                             
                             {images.map((image, index) => (
-                                <a href={image.alt} target='_blank'>
+                                <a href={image.alt} target='_blank' >
                                 <img
                                 key={index}
                                 className={`gallery_item ${index === 3 ? "second_column" : "first_colum"}`}
