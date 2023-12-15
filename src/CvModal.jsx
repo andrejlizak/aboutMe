@@ -244,7 +244,7 @@ const CvModal = ({ open, handleClose }) =>{
                         <div className="flex-col reach-me">
                             <div className="flex-row">
                                 <img src={home} alt="" />
-                                <h3>Slnečná 28, Lendak, SK</h3>
+                                <h3>Slnečná 28, 059 07, Lendak, SK</h3>
                             </div>
                         </div>
                     </div>
